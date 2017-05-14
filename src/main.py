@@ -71,6 +71,8 @@
 # if __name__ == "__main__":
 #     showNaoImage(NAO_IP, NAO_PORT)
 import cv2
+
 import balldetector
+
 img = cv2.imread("camImage.png")
 balldetector.BallDetector.findBalls(img, 0)
